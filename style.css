@@ -721,6 +721,9 @@ p.pos{
   color: #8998a1;
   font-size: 14px;
 }
+.a,.b,.c,.d,.e,.f,.g img{
+  max-height: 300px;
+}
 /* mobile responsive */
 @media (max-width: 37.5em) {
   .container {
@@ -810,9 +813,12 @@ p.pos{
     grid-area: 7 / 1 / 8 / 13;
   }
 
-  .g,
+  /* .g,
   .f {
     height: 100%;
+  } */
+  .a,.b,.c,.d,.e,.f,.g img{
+    max-height: 175px;
   }
   .portfolio__gallery > div > p {
     font-size: 20px;
