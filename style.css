@@ -517,4 +517,14 @@ article section
   .our__service .service__box {
     width: 100%;
   }
+  .service__box img {
+    width: 48px;
+    height: 48px;
+  }
+  .service__box h3 {
+    font-size: 20px;
+  }
+  .service__box h3 {
+    font-size: 14px;
+  }
 }
