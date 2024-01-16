@@ -684,7 +684,7 @@ font-weight: 800;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relateve;
+  position: relative;
 }
 .review i{
   position : absolute;
@@ -709,6 +709,7 @@ font-weight: 800;
   line-height: 35px;
   text-align: center;
   margin: 60px 0;
+ width: 70%;
 }
 .role {
   font-weight: 700;
@@ -868,9 +869,9 @@ p.pos{
     font-size: 16px;
     line-height: 20px;
   }
-  .left-side,.right-side{
+  /* .left-side,.right-side{
     margin-bottom: 95px;
-  }
+  } */
   .video {
     
     width: 100%;
