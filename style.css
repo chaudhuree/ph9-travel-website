@@ -666,7 +666,9 @@ font-weight: 800;
 .copyright{
   margin-top: 50px;
 }
-
+.logo__box {
+  color: #000;
+}
 /*************
  review section
 ************/
