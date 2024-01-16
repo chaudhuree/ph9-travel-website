@@ -193,7 +193,9 @@ nav ul {
   padding: 1.6rem 0;
   font-weight: 700;
 }
-
+/**************
+article section
+***************/
 .article__popular {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -245,20 +247,25 @@ nav ul {
   font-weight: 800;
 }
 
-/* portfolio section */
-.portfolio{
+/****************
+ portfolio section 
+ ****************/
+.portfolio {
   width: 100%;
   padding: 50px 0;
 }
-.portfolio__textbox {
+.portfolio__textbox,
+.why__us__textbox {
   text-align: center;
 }
-.portfolio__textbox h3 {
+.portfolio__textbox h3,
+.why__us__textbox h3 {
   color: #131318;
   font-size: 40px;
   font-weight: 800;
 }
-.portfolio__textbox p {
+.portfolio__textbox p,
+.why__us__textbox p {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
   font-size: 16px;
@@ -275,7 +282,11 @@ nav ul {
   justify-content: center;
   align-items: center;
   position: relative;
-  background-image: linear-gradient(0deg, rgba(19, 19, 24, 0.20) 0%, rgba(19, 19, 24, 0.20) 100%);
+  background-image: linear-gradient(
+    0deg,
+    rgba(19, 19, 24, 0.2) 0%,
+    rgba(19, 19, 24, 0.2) 100%
+  );
 }
 .portfolio__gallery > div > img {
   width: 100%;
@@ -343,17 +354,67 @@ nav ul {
   border-radius: 8px;
 }
 
-/* .g,
-.f {
-  height: 60%;
-} */
-/* .g img {
-  height: 65%;
+/***************
+ why us section 
+ ***************/
+
+.our__service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  flex-wrap: wrap;
+  padding: 48px 0;
+}
+.service__box {
+  border-radius: 16px;
+}
+.service__box:nth-child(1) {
+  background: rgba(251, 181, 99, 0.05);
+  border: 1px solid rgba(251, 181, 99, 0.2);
+}
+.service__box:nth-child(2) {
+  border: 1px solid rgba(41, 206, 246, 0.2);
+  background: rgba(41, 206, 246, 0.05);
+}
+.service__box:nth-child(3) {
+  border: 1px solid rgba(233, 68, 68, 0.2);
+  background: rgba(233, 68, 68, 0.05);
+}
+.service__box img {
+  width: 64px;
+  height: 64px;
 }
 
-.e img {
-  height: 97.5%;
-} */
+.our__service .service__box {
+  width: calc((100% - 24px) / 2);
+  padding: 3.2rem;
+}
+
+.service__box h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin: 32px 0;
+}
+
+.service__box p {
+  color: #5a5a5d;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 /* mobile responsive */
 @media (max-width: 37.5em) {
@@ -451,5 +512,9 @@ nav ul {
   .portfolio__gallery > div > p {
     font-size: 20px;
     word-break: keep-all;
+  }
+  /* why us section */
+  .our__service .service__box {
+    width: 100%;
   }
 }
