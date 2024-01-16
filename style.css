@@ -27,26 +27,101 @@ html {
   /* font-size: 10px; */
   font-size: 62.5%;
   overflow-x: hidden;
-  /* Does NOT work on Safari */
   scroll-behavior: smooth;
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
+  font-family: "Mulish", sans-serif;
   line-height: 1;
   font-weight: 400;
   font-size: 1.6rem;
-  color: #5A5A5D;
+  color: #5a5a5d;
   overflow-x: hidden;
 }
-
-.container{
+.bd {
+  border: 2px solid palevioletred;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  vertical-align: middle;
+}
+a {
+  text-decoration: none;
+  color: #424247;
+}
+.container {
   max-width: 117rem;
   margin: 0 auto;
+  padding: 0 2rem;
 }
-.pt-50{
-  padding-top: 50px;
+.pt-50 {
+  padding-top: 5rem;
 }
-.pb-50{
-  padding-bottom: 50px;
+.pb-50 {
+  padding-bottom: 5rem;
+}
+
+/********************
+        Header
+*********************/
+.container nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5rem 0;
+}
+.icon img {
+  width: 5.6rem;
+  height: 4.5rem;
+}
+.icon {
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  gap: 1rem;
+}
+.icon p {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 3.6rem;
+  font-weight: 800;
+}
+.icon p span{
+  color: #FF5400;
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4.4rem;
+}
+
+.icon__link a {
+  font-size: 1.8rem;
+  font-weight: 700;
+  
+}
+.icon__link a:active,
+.icon__link a:hover {
+  color: #FF5400;
+}
+.mobile__nav__icon{
+  stroke: #131318;
+  display: none;
+  width: 2.4rem;
+  height: 2.4rem;
+  /* visibility: hidden;
+  opacity: 0;
+  pointer-events: none; */
+}
+
+@media (max-width: 37.5em) {
+  .mobile__nav__icon{
+    display: block;
+  }
+  .full__nav{
+    display: none;
+  }
 }
