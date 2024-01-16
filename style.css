@@ -53,6 +53,20 @@ a {
   text-decoration: none;
   color: #424247;
 }
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  text-indent: 2px;
+  text-overflow: '';
+}
+select {
+  padding: 10px 50px 10px 10px; /* Adjust the padding as needed */
+  background-image: url('https://cdn-icons-png.flaticon.com/512/120/120890.png');
+  background-repeat: no-repeat;
+  background-position: 105px center; /*right(value is given)  center*/
+  background-size: 12px; /* Adjust the size of your icon */
+}
 .container {
   max-width: 117rem;
   margin: 0 auto;
@@ -881,5 +895,10 @@ p.pos{
 }
 .newsletter_form_box{
   width: 100%;
+}
+select {
+
+  background-position: 200px center; 
+  background-size: 10px; 
 }
 }
