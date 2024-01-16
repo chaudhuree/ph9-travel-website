@@ -255,17 +255,20 @@ article section
   padding: 50px 0;
 }
 .portfolio__textbox,
-.why__us__textbox {
+.why__us__textbox,
+.discount__textbox {
   text-align: center;
 }
 .portfolio__textbox h3,
-.why__us__textbox h3 {
+.why__us__textbox,
+.discount__textbox {
   color: #131318;
   font-size: 40px;
   font-weight: 800;
 }
 .portfolio__textbox p,
-.why__us__textbox p {
+.why__us__textbox p,
+.discount__textbox p {
   color: rgba(19, 19, 24, 0.7);
   text-align: center;
   font-size: 16px;
@@ -405,17 +408,86 @@ article section
   line-height: 26px;
 }
 
+/***************
+ deals and discount
+ ***************/
 
+.discount__gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-top: 48px;
+}
 
+.deals__basic {
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
+    url("./Images/Group 39.png");
+  background-size: cover;
+  background-position: center;
+  padding: 56px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-radius: 16px;
+}
+.deals__basic.premium {
+  justify-content: flex-end;
+}
+.deals__box {
+  padding: 50px;
+  width: 60%;
+  border-radius: 16px;
+  border: 2px solid #fff;
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(2.5px);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 
+.pack__details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  margin-left: -8px;
+}
+.pack__details i {
+  color: #ff5400;
+  padding: 0 8px;
+}
+.details__text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.details__text h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+}
+.details__text p {
+  color: #5a5a5d;
 
+  font-size: 16px;
 
+  font-weight: 400;
+  line-height: 26px;
+}
 
-
-
-
-
-
+.details__text h4 {
+  color: #ff5400;
+  font-size: 20px;
+  font-weight: 800;
+}
+.discount__button {
+  display: block;
+  margin: 48px auto;
+}
 /* mobile responsive */
 @media (max-width: 37.5em) {
   .container {
@@ -526,5 +598,29 @@ article section
   }
   .service__box h3 {
     font-size: 14px;
+  }
+  /* deals and details */
+  .deals__box {
+    width: 100%;
+    margin-top: 80px;
+  }
+  .details__text h3 {
+    font-size: 20px;
+  }
+  .details__text p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px; /* 171.429% */
+  }
+  .details__text h4 {
+    font-size: 16px;
+  }
+  .pack__details {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .time_table{
+      margin-bottom: 16px;
+      width: 100%;
   }
 }
