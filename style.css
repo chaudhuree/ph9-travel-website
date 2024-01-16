@@ -844,6 +844,7 @@ p.pos{
   .deals__box {
     width: 100%;
     margin-top: 80px;
+    padding:30px;
   }
   .details__text h3 {
     font-size: 20px;
@@ -903,5 +904,10 @@ select {
 
   background-position: 200px center; 
   background-size: 10px; 
+}
+.deals__basic {
+
+  padding: 20px 16px 16px;
+
 }
 }
