@@ -245,6 +245,10 @@ article section
   border-radius: 8px;
   padding: 1.4rem 3.4rem;
   font-weight: 800;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 /****************
@@ -617,6 +621,12 @@ footer {
 .footer__logo img{
   width: 40px;
 }
+.logo__box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
 .footer__logo h5{
   color: #131318;
 font-family: Mulish;
@@ -795,6 +805,14 @@ p.pos{
   .our__service .service__box {
     width: 100%;
   }
+  .why__us__textbox h3,.discount__textbox h3 {
+    font-size: 20px;
+  }
+  .why__us__textbox p,.discount__textbox p{
+    font-size: 14px;
+    line-height: 24px;
+    width: 70%;
+  }
   .service__box img {
     width: 48px;
     height: 48px;
@@ -837,4 +855,31 @@ p.pos{
   .left-side,.right-side{
     margin-bottom: 95px;
   }
+  .video {
+    
+    width: 100%;
+}
+.footer__logo{
+  gap: 8px;
+}
+.footer__logo h5 {
+  font-size: 22px;
+}
+.footer__logo img {
+  width: 30px;
+}
+.footer_content p {
+  font-size: 14px;
+  line-height: 24px;
+}
+.copyright{
+  font-size: 14px;
+  font-weight: 300;
+}
+.newsletter {
+  flex-direction: column;
+}
+.newsletter_form_box{
+  width: 100%;
+}
 }
