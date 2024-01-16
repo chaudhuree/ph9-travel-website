@@ -244,6 +244,12 @@ nav ul {
   padding: 1.4rem 3.4rem;
   font-weight: 800;
 }
+
+/* portfolio section */
+.portfolio{
+  width: 100%;
+  padding: 50px 0;
+}
 .portfolio__textbox {
   text-align: center;
 }
@@ -264,6 +270,7 @@ nav ul {
 }
 
 .portfolio__gallery > div {
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -292,7 +299,6 @@ nav ul {
   grid-template-rows: repeat(3, 1fr);
   gap: 10px 10px;
   grid-auto-flow: row;
-  max-height: 30vh;
   margin-top: 48px;
 }
 
@@ -337,10 +343,10 @@ nav ul {
   border-radius: 8px;
 }
 
-.g,
+/* .g,
 .f {
   height: 60%;
-}
+} */
 /* .g img {
   height: 65%;
 }
