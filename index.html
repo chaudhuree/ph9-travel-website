@@ -15,8 +15,9 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!-- header section -->
     <header>
-      <div class="container">
+      <div class="container pb-50">
         <nav>
           <div class="icon">
             <img src="./Images/icon.png" alt="nav icon" />
@@ -34,40 +35,77 @@
           </div>
         </nav>
         <div class="header__banner">
-          
-            <div class="banner__content">
-              <h1>Explore Your Travel</h1>
-            <p>Discover Your World: Where Every Destination Tells a Tale, and Each Adventure Echoes in Your Heart. Let Your Journeys Craft the Chapters of Your Life.</p>
-          
-          <div class="input__box">
-            
+          <div class="banner__content">
+            <h1>Explore Your Travel</h1>
+            <p>
+              Discover Your World: Where Every Destination Tells a Tale, and
+              Each Adventure Echoes in Your Heart. Let Your Journeys Craft the
+              Chapters of Your Life.
+            </p>
+
+            <div class="input__box">
               <form class="input__box__form">
                 <input type="text" placeholder="Where go" />
-          
-            <select type="text"  >
-              <option disabled >When</option>
-              <option value="1">This Week</option>
-              <option value="2">This Month</option>
-              <option value="3">Next Month</option> 
-              <option value="4">Next Year</option>
-              
-            </select>
-          
-            <select type="text"  >
-              <option disabled >Select Type</option>
-              <option value="1">Adventure</option>
-              <option value="2">Family</option>
-              <option value="3">Solo</option> 
-         
-              
-            </select>
-         
-          <button class="button--primary">Find Now</button>
+
+                <select type="text">
+                  <option disabled>When</option>
+                  <option value="1">This Week</option>
+                  <option value="2">This Month</option>
+                  <option value="3">Next Month</option>
+                  <option value="4">Next Year</option>
+                </select>
+
+                <select type="text">
+                  <option disabled>Select Type</option>
+                  <option value="1">Adventure</option>
+                  <option value="2">Family</option>
+                  <option value="3">Solo</option>
+                </select>
+
+                <button class="button--primary">Find Now</button>
               </form>
-        </div> 
             </div>
-       
+          </div>
+        </div>
       </div>
     </header>
+    <!-- main section -->
+    <main class="container">
+      <article class="article__popular pb-50 pt-50">
+        <div class="article__popular__textbox">
+          <h3>Our Popular Tours</h3>
+          <p>
+            Dolor sit amet consectetur. Diam volutpat neque habitasse pharetra
+            odio sit massa. Sodales dictumst nec nibh pellentesque.
+          </p>
+          <ul>
+            <li>
+              Tempus euismod lacus mauris dignissim quis in ultrices. Magna
+              nullam odio neque diam. Sociis erat at .
+            </li>
+            <li>
+              Adipiscing ornare pellentesque mauris volutpat tortor vitae platea
+              porta lacus. Lectus suspendisse nullam.
+            </li>
+            <li>
+              Accumsan eget et turpis praesent lorem egestas enim elit bibendum.
+              Risus at in.
+            </li>
+          </ul>
+          <p>
+            Amet consectetur. Vulputate commodo felis molestie risus ornare
+            nulla amet et. Libero commodo sagittis dignissim adipiscing quis.
+            Habitant adipiscing risus natoque aliquet. Id bibendum nunc senectus
+            semper tincidunt.
+          </p>
+          <div><button class="button--primary">Read More</button></div>
+        </div>
+        <div class="article__popular__imagebox">
+          <figure>
+            <img src="./Images/Rectangle 4.png" alt="popular" />
+          </figure>
+        </div>
+      </article>
+    </main>
   </body>
 </html>

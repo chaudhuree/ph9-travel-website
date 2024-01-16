@@ -89,8 +89,8 @@ a {
   font-size: 3.6rem;
   font-weight: 800;
 }
-.icon p span{
-  color: #FF5400;
+.icon p span {
+  color: #ff5400;
 }
 nav ul {
   display: flex;
@@ -101,13 +101,12 @@ nav ul {
 .icon__link a {
   font-size: 1.8rem;
   font-weight: 700;
-  
 }
 .icon__link a:active,
 .icon__link a:hover {
-  color: #FF5400;
+  color: #ff5400;
 }
-.mobile__nav__icon{
+.mobile__nav__icon {
   stroke: #131318;
   display: none;
   width: 2.4rem;
@@ -120,102 +119,174 @@ nav ul {
 /* banner section */
 .header__banner {
   width: 100%;
-  padding:10.6rem 0;
-  background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%),
+  padding: 10.6rem 0;
+  background-image: linear-gradient(
+      180deg,
+      rgba(19, 19, 24, 0.8) 0%,
+      rgba(19, 19, 24, 0) 100%
+    ),
     url("./Images/Group 13 .png");
   background-size: cover;
   background-position: center;
   border-radius: 1.6rem;
   text-align: center;
-
 }
 
-.banner__content{
+.banner__content {
   display: flex;
   flex-direction: column;
   gap: 2.4rem;
   justify-content: center;
   align-items: center;
 }
-.banner__content h1{
-  color: #FFF;
-font-family: Mulish;
-font-size: 64px;
+.banner__content h1 {
+  color: #fff;
+  font-family: Mulish;
+  font-size: 64px;
 
-font-weight: 800;
-
+  font-weight: 800;
 }
-.banner__content p{
-  color: #FFF;
-  max-width:  676px;
-text-align: center;
-font-family: Mulish;
-font-size: 16px;
-font-weight: 400;
-line-height: 26px; /* 162.5% */
+.banner__content p {
+  color: #fff;
+  max-width: 676px;
+  text-align: center;
+  font-family: Mulish;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
 }
 
-.input__box{
+.input__box {
   border-radius: 8px;
-  background: rgba(255, 255, 255, 0.30);
+  background: rgba(255, 255, 255, 0.3);
   padding: 16px;
 }
-.input__box__form{
+.input__box__form {
   display: flex;
   gap: 2.4rem;
   align-items: center;
-
 }
 
 .input__box__form input,
 .input__box__form select,
-.input__box__form button{
-width: 100%;
+.input__box__form button {
+  width: 100%;
 }
 .input__box__form input,
-.input__box__form select{
+.input__box__form select {
   border: none;
   outline: none;
   color: #13131880;
   font-size: 16px;
   font-weight: 400;
-  padding: 1.6rem ;
+  padding: 1.6rem;
   border-radius: 8px;
 }
 
-.input__box__form button{
+.input__box__form button {
   border: none;
   outline: none;
-  background: #FF5400;
-  color: #FFF;
+  background: #ff5400;
+  color: #fff;
   border-radius: 8px;
   padding: 1.6rem 0;
   font-weight: 700;
 }
 
+.article__popular {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6.4rem;
+}
+.article__popular__textbox {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.article__popular__textbox h3 {
+  color: #131318;
+  font-family: Mulish;
+  font-size: 40px;
+  font-weight: 800;
+}
+
+.article__popular__textbox p {
+  max-width: 577px;
+  color: rgba(19, 19, 24, 0.7);
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
+}
+
+.article__popular__textbox ul {
+  list-style-type: unset;
+  padding: 0 38px 0 32px;
+}
+.article__popular__textbox ul li {
+  color: #131318b3;
+  font-family: Mulish;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.button--primary {
+  border: none;
+  outline: none;
+  background: #ff5400;
+  color: #fff;
+  border-radius: 8px;
+  padding: 1.4rem 3.4rem;
+  font-weight: 800;
+}
+
 /* mobile responsive */
 @media (max-width: 37.5em) {
   .container {
-
-    padding: 3.2rem 2.4rem ;
+    padding: 3.2rem 2.4rem;
   }
-  .mobile__nav__icon{
+  .button--primary {
+    font-weight: 700;
+  }
+  /* navbar */
+  .mobile__nav__icon {
     display: block;
   }
-  .full__nav{
+  .full__nav {
     display: none;
   }
-  .input__box__form{
-
+  /* banner */
+  .input__box__form {
     justify-content: center;
     flex-direction: column;
-  
   }
-  .banner__content h1{
+  .banner__content h1 {
     font-size: 2.2rem;
   }
-  .banner__content p{
+  .banner__content p {
     font-size: 1.4rem;
     width: 30.4rem;
+  }
+
+  /* popular article */
+  .article__popular {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+  }
+  .article__popular__textbox h3 {
+    font-size: 2rem;
+  }
+  .article__popular__textbox p {
+    font-size: 14px;
+    line-height: 24px; /* 162.5% */
+  }
+  .article__popular__textbox ul li {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
